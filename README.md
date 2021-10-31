@@ -24,6 +24,26 @@ make stop
 ```
 
 
+## How to verify correctness
+
+- Use any API tool/platform of your chose.
+- While application running, make a `POST` request:
+  - endpoint: `http://0.0.0.0:5000/eport`
+  - auth: Basic. Username: `myUser123`, Password: `secretSecret`
+  - body:
+    ```json
+    {
+        "annotation_id": 9142612,
+        "queue_id": 136373
+    }
+    ```
+- Should return following json response:
+```json
+{
+    "success": true
+}
+```
+
 
 ## How to develop
 
