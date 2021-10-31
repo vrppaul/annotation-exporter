@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      FLASK_ENV: development
+    volumes:
+      - ./exporter:/app/exporter
+    ports:
+      - "5000:5000"
+    container_name: exporter_web

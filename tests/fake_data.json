@@ -1,0 +1,409 @@
+{
+    "pagination": {
+        "total": 1,
+        "total_pages": 1,
+        "next": null,
+        "previous": null
+    },
+    "results": [
+        {
+            "url": "https://api.elis.rossum.ai/v1/annotations/9142612",
+            "status": "to_review",
+            "arrived_at": "2021-10-24T18:28:15.501377Z",
+            "exported_at": null,
+            "document": {
+                "url": "https://api.elis.rossum.ai/v1/documents/9247177",
+                "file_name": "Sample Invoice.pdf",
+                "file": "https://api.elis.rossum.ai/v1/documents/9247177/content"
+            },
+            "modifier": {
+                "url": "https://api.elis.rossum.ai/v1/users/112079",
+                "username": "yirojid582@forfity.com"
+            },
+            "schema": {
+                "url": "https://api.elis.rossum.ai/v1/schemas/2015815"
+            },
+            "metadata": {
+                "sampleDocument": "true"
+            },
+            "content": [
+                {
+                    "category": "section",
+                    "schema_id": "invoice_info_section",
+                    "children": [
+                        {
+                            "category": "datapoint",
+                            "schema_id": "document_id",
+                            "rir_confidence": 0.9809681765205903,
+                            "value": "143453775",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "order_id",
+                            "rir_confidence": 0.8667448705405638,
+                            "value": "2423 KONGSVINGER",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "date_issue",
+                            "rir_confidence": 0.9633308578148995,
+                            "value": "",
+                            "type": "date"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "date_due",
+                            "rir_confidence": 0.9439578858341987,
+                            "value": "2019-03-31",
+                            "type": "date"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "date_uzp",
+                            "rir_confidence": null,
+                            "value": "",
+                            "type": "date"
+                        }
+                    ]
+                },
+                {
+                    "category": "section",
+                    "schema_id": "payment_info_section",
+                    "children": [
+                        {
+                            "category": "datapoint",
+                            "schema_id": "account_num",
+                            "rir_confidence": 0.9678870341221414,
+                            "value": "150342342340",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "bank_num",
+                            "rir_confidence": null,
+                            "value": "",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "iban",
+                            "rir_confidence": 0.9074813333997684,
+                            "value": "NO6513425245230",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "bic",
+                            "rir_confidence": 0.859877545249819,
+                            "value": "DNBANOKK",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "var_sym",
+                            "rir_confidence": null,
+                            "value": "",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "spec_sym",
+                            "rir_confidence": null,
+                            "value": "",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "category": "section",
+                    "schema_id": "amounts_section",
+                    "children": [
+                        {
+                            "category": "datapoint",
+                            "schema_id": "amount_total",
+                            "rir_confidence": 0.9340719220592579,
+                            "value": "12978.81",
+                            "type": "number"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "amount_total_base",
+                            "rir_confidence": 0.8121191679979197,
+                            "value": "10383.05",
+                            "type": "number"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "amount_total_tax",
+                            "rir_confidence": 0.810763075581105,
+                            "value": "2595.76",
+                            "type": "number"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "currency",
+                            "rir_confidence": 0.9901123642921448,
+                            "value": "nok",
+                            "type": "enum"
+                        },
+                        {
+                            "category": "multivalue",
+                            "schema_id": "tax_details",
+                            "children": [
+                                {
+                                    "category": "tuple",
+                                    "schema_id": "tax_detail",
+                                    "children": [
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "tax_detail_rate",
+                                            "rir_confidence": null,
+                                            "value": "",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "tax_detail_base",
+                                            "rir_confidence": null,
+                                            "value": "10383.05",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "tax_detail_tax",
+                                            "rir_confidence": null,
+                                            "value": "2595.76",
+                                            "type": "number"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category": "section",
+                    "schema_id": "vendor_section",
+                    "children": [
+                        {
+                            "category": "datapoint",
+                            "schema_id": "sender_name",
+                            "rir_confidence": 0.39595668249840227,
+                            "value": "InfoNet Workshop",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "sender_ic",
+                            "rir_confidence": null,
+                            "value": "",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "sender_vat_id",
+                            "rir_confidence": null,
+                            "value": "NO9756463241MTA",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "recipient_name",
+                            "rir_confidence": null,
+                            "value": "",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "recipient_ic",
+                            "rir_confidence": null,
+                            "value": "",
+                            "type": "string"
+                        },
+                        {
+                            "category": "datapoint",
+                            "schema_id": "recipient_vat_id",
+                            "rir_confidence": null,
+                            "value": "NO914324274MTA",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "category": "section",
+                    "schema_id": "other_section",
+                    "children": [
+                        {
+                            "category": "datapoint",
+                            "schema_id": "notes",
+                            "rir_confidence": null,
+                            "value": "",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "category": "section",
+                    "schema_id": "line_items_section",
+                    "children": [
+                        {
+                            "category": "multivalue",
+                            "schema_id": "line_items",
+                            "children": [
+                                {
+                                    "category": "tuple",
+                                    "schema_id": "line_item",
+                                    "children": [
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_description",
+                                            "rir_confidence": null,
+                                            "value": "HPI Battery 4C 40WHr 2.8AH LI LA098241\n242341-800Factory SealedHS Code\nOrigin CN",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_quantity",
+                                            "rir_confidence": null,
+                                            "value": "3",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_amount_base",
+                                            "rir_confidence": null,
+                                            "value": "645.53",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_amount",
+                                            "rir_confidence": null,
+                                            "value": "",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_total_base",
+                                            "rir_confidence": null,
+                                            "value": "1936.59",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_amount_total",
+                                            "rir_confidence": null,
+                                            "value": "",
+                                            "type": "number"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "tuple",
+                                    "schema_id": "line_item",
+                                    "children": [
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_description",
+                                            "rir_confidence": null,
+                                            "value": "HPI 11.6-inch HD WLED UWVA touchscreen display\n9023422-001Factory SealedHS Code\nOrigin CN\nSerial Numbers 72624323421",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_quantity",
+                                            "rir_confidence": null,
+                                            "value": "4",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_amount_base",
+                                            "rir_confidence": null,
+                                            "value": "2077.14",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_amount",
+                                            "rir_confidence": null,
+                                            "value": "",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_total_base",
+                                            "rir_confidence": null,
+                                            "value": "8308.56",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_amount_total",
+                                            "rir_confidence": null,
+                                            "value": "",
+                                            "type": "number"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "tuple",
+                                    "schema_id": "line_item",
+                                    "children": [
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_description",
+                                            "rir_confidence": null,
+                                            "value": "Freight\nFactory Sealed HS Code",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_quantity",
+                                            "rir_confidence": null,
+                                            "value": "1",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_amount_base",
+                                            "rir_confidence": null,
+                                            "value": "137.90",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_amount",
+                                            "rir_confidence": null,
+                                            "value": "",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_total_base",
+                                            "rir_confidence": null,
+                                            "value": "137.90",
+                                            "type": "number"
+                                        },
+                                        {
+                                            "category": "datapoint",
+                                            "schema_id": "item_amount_total",
+                                            "rir_confidence": null,
+                                            "value": "",
+                                            "type": "number"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "automated": false,
+            "modified_at": "2021-10-25T08:03:10.736446Z",
+            "assigned_at": "2021-10-25T08:03:10.736446Z"
+        }
+    ]
+}
